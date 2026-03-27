@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Asociaţia T&B ® - Protecția Animalelor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        :root {
+            --primary-color: #1abc9c;
+            --secondary-color: #333;
+            --accent-color: #ffcccc;
+            --text-color: #444;
+        }
+
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; color: var(--text-color); line-height: 1.6; }
+
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 { font-size: 45px; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+
+        .navbar {
+            overflow: hidden;
+            background-color: var(--secondary-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover { background-color: #1abc9c; color: white; }
+
+        .gallery {
+            margin: 10px;
+            border: none;
+            float: left;
+            width: 220px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .gallery:hover { transform: scale(1.05); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+
+        .gallery img { width: 100%; height: 180px; object-fit: cover; }
+
+        .desc { padding: 15px; text-align: center; font-size: 14px; background: #fff; }
+
+        .row { display: flex; flex-wrap: wrap; }
+        .side { flex: 30%; background-color: #f9f9f9; padding: 30px; border-right: 1px solid #eee; }
+        .main { flex: 70%; background-color: white; padding: 30px; }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #1abc9c;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        input[type=submit]:hover { background-color: #16a085; }
+
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; border-radius: 8px; overflow: hidden; }
+        th, td { padding: 15px; text-align: center; border-bottom: 1px solid #ddd; }
+
+        .footer { padding: 40px; text-align: center; background: #333; color: white; }
+        .fa { padding: 15px; font-size: 20px; width: 50px; text-align: center; text-decoration: none; margin: 5px; border-radius: 50%; transition: 0.3s; }
+        .fa:hover { opacity: 0.7; transform: translateY(-3px); }
+        .fa-facebook { background: #3B5998; color: white; }
+        .fa-instagram { background: #e1306c; color: white; }
+        .fa-snapchat { background: #fffc00; color: #333; }
+
+        .checked { color: orange; }
+
+        @media screen and (max-width: 700px) { .row { flex-direction: column; } }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Asociaţia T&B ®</h1>
+    <p><i>Din dragoste pentru prietenii blănoşi</i></p> 
+</div>
+
+<div class="navbar">
+    <a href="https://donatie.ro/" target="_blank">Donează €</a>
+    <a href="https://cainifarastapan.sibiu.ro/index.php/adoptii/formulare" target="_blank">Adoptă ♥</a>
+    <a href="#">Vrei să fii voluntar? 😄</a>
+</div>
+
+<div class="row">
+    <div class="side">
+        <h2>Despre noi</h2>
+        <img src="spikesmiau.png" alt="Cei mai buni prieteni" style="width:100%; border-radius:8px; margin-bottom:15px;">
+        <p>Asociația T&B este o organizație non-profit fondată în aprilie 2018 pentru ajutorarea animalelor fără stăpân. Până în prezent, am preluat în grijă peste 400 de câini și 270 de pisici.</p>
+        <p>În 2020 am început construirea noului adăpost la Săcele, pe un teren de 10.000 mp, un loc creat din dragoste unde animalele pot beneficia de atenția și grija necesară.</p>
+        <hr style="border: 0; height: 1px; background: #ddd; margin: 20px 0;">
+        <h3>Mesajul echipei</h3>
+        <img src="p22b.png" alt="Echipa" style="width:100%; border-radius:8px; margin-bottom:10px;">
+        <p style="font-style: italic; color: #666; text-align: center;">"A fi împreună este un început, a rămâne împreună este un progres, a lucra împreună este un succes."</p>
+    </div>
+
+    <div class="main">
+        <h2>Implică-te</h2>
+        <p>Avem nevoie de ajutor pentru următoarele obiective:</p>
+        <ol>
+            <li>Continuarea lucrărilor la noul adăpost</li>
+            <li>Întreținerea spațiilor existente</li>
+            <li>Asigurarea hranei și tratamentelor medicale</li>
+        </ol>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 20px;">
+            <div class="gallery">
+                <img src="teos.png" alt="Adopție">
+                <div class="desc">Primul câine adoptat</div>
+            </div>
+            <div class="gallery">
+                <img src="grif.png" alt="Campion">
+                <div class="desc">Grif - Din adăpost la campion</div>
+            </div>
+            <div class="gallery">
+                <img src="pisib.png" alt="Pisică">
+                <div class="desc">Prima pisică adoptată</div>
+            </div>
+        </div>
+
+        <h3>Cum alocăm donațiile</h3>
+        <table>
+            <tr style="background-color: #1abc9c; color: white;">
+                <th>Noul Adăpost</th>
+                <th>Tratament Veterinar</th>
+                <th>Mâncare Animale</th>
+            </tr>
+            <tr style="background-color: #f2f2f2;">
+                <td>45%</td>
+                <td>22.5%</td>
+                <td>22.5%</td>
+            </tr>
+        </table>
+
+        <h3>Contactați-ne</h3>
+        <p>Aveți întrebări? Completați formularul și vă vom răspunde în cel mai scurt timp.</p>
+        <form action="#">
+            <label for="fname">Nume și Prenume</label>
+            <input type="text" id="fname" placeholder="Introduceți numele...">
+            
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Adresa de email...">
+            
+            <label>Doresc să fiu contactat prin:</label><br>
+            <input type="radio" name="contact" value="email"> Email
+            <input type="radio" name="contact" value="phone"> Telefon
+            <br><br>
+            
+            <input type="submit" value="Trimite Formularul">
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-snapchat"></a>
+    <p>Strada Lungă 244, Braşov 500059</p>
+    <div style="margin-top:10px;">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+    </div>
+    <p style="font-size: 12px; margin-top: 20px;">&copy; 2024 Asociația T&B. Toate drepturile rezervate.</p>
+</div>
+
+</body>
+</html>
